@@ -1,7 +1,7 @@
 # Setup
 title:        Understanding news polarization
 tagline:      A project for Advanced Data Analytics 2021 by Muesli
-baseurl:      "/usa-news-polarization"
+baseurl:      "/usa-news-politicization"
 paginate:     1
 locale:       "en"
 
