@@ -1,0 +1,18 @@
+# Setup
+title:        Understanding news polarization
+tagline:      A project for Advanced Data Analytics 2021 by Muesli
+baseurl:      ""
+paginate:     1
+locale:       "en"
+
+# About/contact
+author:
+  name:       Muesli
+  url:        http://yourhomepage.com 
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
