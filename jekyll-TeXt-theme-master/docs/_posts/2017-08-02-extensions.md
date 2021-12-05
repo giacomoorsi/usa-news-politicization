@@ -12,6 +12,7 @@ With the help of extensions, you can easily add **audios**, **videos**, **slides
 
 [Documentation](https://tianqi.name/jekyll-TeXt-theme/docs/en/extensions)
 
+```
 ## Audio
 
 ### SoundCloud
@@ -50,3 +51,4 @@ Available in Chinese mainland.
 ### CodePen
 
 <div>{%- include extensions/codepen.html user='kitian616' hash='aQmWZG' default_tab='html,result' -%}</div>
+```
