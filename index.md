@@ -3,6 +3,10 @@ layout: default
 title: Our beautiful data story
 ---
 
+{% include_relative home/scroller-uikit.html %}
+
+# Introduction
+
 As is well known, the political system of the United States of America is marked
 by a system of bipolarity that opposes Democrats to Republicans. The bipolarity
 that opposes Americans at the ballot box and in the polls is reflected in
@@ -14,7 +18,6 @@ news reported by CNN while Republicans by Fox News.
 In the journey illustrated by this data story, we have the ambition to report
 factual data that supports the thesis that some news sources are biased,
 analyzing 5 years of quotes reported by 19 online newspapers that we selected.
-
 {% include_relative home/introduction/metrics.html %}
 
 ## Motivations
@@ -56,8 +59,8 @@ Introduce the data we're going to use.
 
 ## Pew research
 
-{% include_relative plots/pew_similarweb.html %}
-{% include_relative plots/pew_twitter.html %}
+<!-- {% include_relative plots/pew_similarweb.html %} -->
+<!-- {% include_relative plots/pew_twitter.html %} -->
 
 # Neat plots
 
@@ -71,7 +74,7 @@ occurs.
 
 The following plot displays how politicized our news sources were in past years:
 
-{% include_relative plots/stats_politicization.html %}
+<!-- {% include_relative plots/stats_politicization.html %} -->
 
 This plot (and all of our plots) is interactive; in particular, years on the
 right can be clicked and double-clicked to display only some of them. Mousing
@@ -103,7 +106,7 @@ well as coverage of important news events, while New York Post is a tabloid.
 
 The following plot displays plot displays how polarized our news sourced were:
 
-{% include_relative plots/stats_polarization_sgn.html %}
+<!-- {% include_relative plots/stats_polarization_sgn.html %} -->
 
 The polarization of a source is positive if it quoted more right-wing
 politicians than left-wing ones, negative in the reverse case.
@@ -124,7 +127,7 @@ TODO: how to explain this? Compare with Trumpization during those years?
 
 For completeness, the following plot displays the absolute value of polarization:
 
-{% include_relative plots/stats_polarization.html %}
+<!--{% include_relative plots/stats_polarization.html %}-->
 
 ## Correlations
 
@@ -132,7 +135,9 @@ Show the correlation matrices.
 
 Discuss how we found out that probably the Internet is left-wing-biased.
 
-<div style="height:500px"></div><!-- Let's put some margin -->
+
+<!--
+<div style="height:500px"></div>
 ---
 
 # Instructions
@@ -177,8 +182,7 @@ fig.write_html("./scatter_demo.html", include_plotlyjs="cdn", full_html=False)
 
 And if we include the result, it looks like follows:
 
-{% include_relative plotly/scatter_demo.html %}
+<!--{% include_relative plotly/scatter_demo.html %}-->
 
-Here's another demo chart:
 
-{% include_relative plotly/bar_demo.html %}
+<!--{% include_relative plotly/bar_demo.html %}-->
