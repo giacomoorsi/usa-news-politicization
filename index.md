@@ -69,29 +69,68 @@ occurs.
 
 ## Politicization
 
+The following plot displays how politicized our news sources were in past years:
+
 {% include_relative plots/stats_politicization.html %}
 
-Describe the findings and how they aren't entirely what we expected.
+This plot (and all of our plots) is interactive; in particular, years on the
+right can be clicked and double-clicked to display only some of them. Mousing
+over the scattered points will display precise politicization at that point, as
+well as the number of articles from that source in that particular year that our
+dataset contains.
 
-Most politicized sources -- ones that report primarily political news (shocker!).
+If we explore this plot, we see that the dataset doesn't really confirm our
+intuitions. Most sources appear to have mostly the same level of politicization.
+Both Fox News and Breitbart are commonly thought of as right-wing-biased.
+We may expect that they are publishing more articles quoting politicians (specifically,
+right-wing politicians) than other sources. However, this is not what we can see
+based on our dataset. The Huffington Post is often thought of as left-wing-biased
+(Breitbart News was conceived of as "The Huffington Post of the right"), yet it is
+also not significantly more politicized than other news sources.
+
+The most politicized news sources are Politico, The Hill and Washington
+Examiner. Twe first two report on political news, so in hindsight it comes as no
+surprise that they quotations are mostly attributed to politicians. We do not
+have a clear reason for Washington Examiner being as politicized as our data
+indicates. It stands out as the only news source we examine that is distrusted
+by both the left and the right, but that alone does not explain the politicization.
+
+The least politicized news sources are USA Today and New York Post. USA Today is
+a middle-market newspaper catering to readers that like both entertainment as
+well as coverage of important news events, while New York Post is a tabloid.
 
 ## Polarization
 
+The following plot displays plot displays how polarized our news sourced were:
+
 {% include_relative plots/stats_polarization_sgn.html %}
 
+The polarization of a source is positive if it quoted more right-wing
+politicians than left-wing ones, negative in the reverse case.
+
+Again, at a glance it seems we do not find what we were looking for in this
+plot. Breitbart News is as right-polarized as Business Insider, a source with
+left-wing readership but trusted by both sides of the political spectrum.
+Similarly, Fox News is as right-polarized as Vox, a website often cited as
+left-biased and distrusted by the right. The Huffington Post is as
+left-polarized as ABC News, and The Wall Street Journal, with mixed readers and
+trusted by both the left and the right, is more left-polarized than either.
+
+However, we can uncover some strange occurences in different years. In 2016, the year
+that Donald Trump was elected, all news sources were left-polarized. On the other hand,
+in years 2018 and 2019 all news sources were right-polarized.
+
+TODO: how to explain this? Compare with Trumpization during those years?
+
+For completeness, the following plot displays the absolute value of polarization:
+
 {% include_relative plots/stats_polarization.html %}
-
-Discuss weirdnesses for years '16, '17, '18.
-
-Maybe calculate and show plots for Trumpization as well? (% of quotes from Trump).
 
 ## Correlations
 
 Show the correlation matrices.
 
 Discuss how we found out that probably the Internet is left-wing-biased.
-
-
 
 <div style="height:500px"></div><!-- Let's put some margin -->
 ---
