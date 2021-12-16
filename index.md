@@ -24,45 +24,79 @@ analyzing 5 years of quotes reported by 19 online newspapers that we selected.
 
 Why did we decide to do this project?
 
-Over the recent years, we've been hearing more and more from our peers, as well
-as reading on the internet, that there's an increasing amount of politicization
-and polarization of news sources in the USA. During and after the 2016 election,
-one could find numerous articles discussing that people backing Trump tended to
-read different news sources from people on the left of the political spectrum,
-news sources that reportendly tended to publish news pieces containing hoaxes
-and conspiracy theories -
-[this](https://www.washingtonpost.com/news/the-fix/wp/2017/08/22/trump-backers-disturbing-reliance-on-hoax-and-conspiracy-theory-websites-in-1-chart/).
-is an example of such an article. We can still read that specific news sources
+Over the recent years, we've been hearing a lot that there's an increasing
+amount of politicization and polarization of news sources in the USA, meaning
+that news feature politicians more often (one well-known politician in
+particular) and that the articles often favour one side of the debate. During
+and after the 2016 election, there were many articles about how people backing
+Trump tended to read different news sources from people on the other side of the
+political spectrum, news sources that reportendly tended to publish news pieces
+containing hoaxes and conspiracy theories - for instance, [this article
+](https://www.washingtonpost.com/news/the-fix/wp/2017/08/22/trump-backers-disturbing-reliance-on-hoax-and-conspiracy-theory-websites-in-1-chart/).
+We can still read that some news sources (like [the Gateway
+Pundit](https://www.reuters.com/investigates/special-report/usa-election-threats-gatewaypundit/))
 are gaining a huge number of readers by helping Trump spread his claims about
-the last election being "stolen"; the news source in question being [the Gateway
-Pundit](https://www.reuters.com/investigates/special-report/usa-election-threats-gatewaypundit/).
-With a disturbing similarity to the "lügenpresse" accusations used by the Third
-Reich against foreign press, Donald Trump himself has been claiming that many
-traditional news sources are spreading "fake news" about him. Apparently, he
-himself is basing his popularity on specific online news sources.
-
-TODO: introduce Quotebank over here.
+the last election being "stolen". Donald Trump himself has been claiming that
+many news sources are spreading "fake news" about him, with a disturbing
+similarity to the "lügenpresse" accusations used by the Third Reich against
+foreign press. It would appear that Mr. Trump's popularity mostly relies
+on specific news sources.
 
 Intuitively, we would expect news sources aligned with Trump to publish articles
 that cite him and people from his political circle - Republicans, that is - more
 than people that oppose him, i.e. Democrats.
 
-Can we use the Quotebank dataset to confirm our intuitions?
+So which sources are with Trump, and which ones are against him?
+
+### Fox News
+When people say that right-wingers consume biased news sources, they often think
+of Fox News. Primarily a news network, Fox News was, for instance,
+[accused](https://www.politico.com/story/2017/11/09/fox-news-trump-presidency-244712)
+of excessively covering scandals concerning Hillary Clinton in order to distract
+from alleged Russian interference in the 2016 presidential elections in the USA.
+
+### Breitbart News
+A news network founded by Andrew Breitbart. Wikipedia introduces it by saying
+that "its journalists are widely considered to be ideologically driven, and much
+of its content has been called misogynistic, xenophobic, and racist by liberals
+and traditional conservatives alike". This is the website often thought of as
+giving biased coverage to Donald Trump during his presidential campaign,
+as we can see [here](https://www.nytimes.com/2016/08/27/business/media/breitbart-news-presidential-race.html).
+
+### CNN
+A widely-watched news channel. Has been accused of false balance and being
+left-biased. May be known for reporting what some people would call a riot
+as "fiery but peaceful protests" after a police shooting.
+
+![Fiery but peaceful indeed.](https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/08/1862/1048/CNN-Headline-Fiery-2.jpg?ve=1&tl=1)
+
+### The Huffington Post
+Often mentioned as a left-biased news website. The mortal enemy of Breitbart
+News, which was created as "The Huffington Post of the right". Also known as
+HuffPost.
+
+### New York Post
+A conservative daily tabloid, known for headlines such as "Headless body in
+topless bar". Maybe surprisingly, maybe unsurprisingly, it was
+[reported](https://www.latimes.com/politics/la-na-pol-trump-insight-haberman-20170728-story.html)
+to be one of the news sources Donald Trump prefers to read.
 
 # Background
 
-Introduce the data we're going to use.
-
-## Similarweb
-
-## Twitter
-
-## Pew research
-
-<!-- {% include_relative plots/pew_similarweb.html %} -->
-<!-- {% include_relative plots/pew_twitter.html %} -->
+_Briefly_ introduce our data sources (or should we do that at the end?):
+- Pew research
+- Similarweb
+- Twitter
 
 # Neat plots
+
+We do neat plots in this section.
+
+All our plots are interactive - points on the plot can be moused over to display
+precise information and sometimes, even additional information not shown
+otherwise (like the number of articles from a source in a particular year). You
+can also explore the plots and filter what is shown by clicking on the labels on
+the right-hand side of the plot.
 
 We probably want to discuss methodology somewhere over here?
 I.e. what it is we exactly calculated.
@@ -70,11 +104,66 @@ I.e. what it is we exactly calculated.
 Our analysis is based on counting articles in which a quote from a given speaker
 occurs.
 
+## News sources
+
+Previously we introduced some of our news sources and we said that we have some
+intutions about the bias of those sources. It turns out that we're not the only
+people with intuitions like that. Pew Research did a study of American public
+asking what opinions did people have about various news sources, and this
+research shows that our intuitions are actually reflected by what people think.
+
+In the plot below we can see how popular the websites of our news sources are.
+We can also see what people use the source for their political information, as
+well as if the source is distrusted by people on the left or on the right.
+
+{% include_relative plots/pew_similarweb.html %}
+
+The following plot is similar, but it displays Twitter followers instead of
+(non-unique) website views:
+
+{% include_relative plots/pew_twitter.html %}
+
+Based on this plot, we can already tell that people on the right read different
+sources than the people on the left. We see that the right-wingers distrust more
+news sources than the left-wingers; in fact, they distrust most of the sources with
+mixed readers! 
+
+Fun fact: there's actually one news source which is distrusted by people on the
+left as well as people on the right. One needs to wonder who exactly reads the
+Washington Examiner.
+
+## Focus on specific politicians
+
+We expected biased news sources to give more space to quotations from Trump.
+Does our data confirm our suspicions?
+
+{% include_relative plots/stats_trumpization.html %}
+
+We cannot really see a pattern in which news sources quote Trump more. For
+instance, both Fox News and Breitbart news quoted Trump around 10% of the time
+in 2018 (which is still a lot, if you think about it!), but various news sources
+(like The Hill, Politico, ABC News, The Washington Examiner) quoted him up to
+twice as often.
+
+Interestingly, we do see that many news sources started quoting Trump much more
+often from 2017 onwards. USA Today is an exception to the this trend - they did
+quote Trump more, but the increase was much smaller than for the other news
+sources.
+
+Out of curiosity, we also inspected how often Hillary Clinton, Trump's opponent
+from the 2016 presidential election, was quoted by our sources:
+
+{% include_relative plots/stats_hillarization.html %}
+
+Interestingly, a reverse tend appears in this plot. Clinton was quoted about as
+often as Trump in 2015 and 2016, but after the election year it would appear that
+our sources lost the interest in her.
+
 ## Politicization
 
 The following plot displays how politicized our news sources were in past years:
 
-<!-- {% include_relative plots/stats_politicization.html %} -->
+{% include_relative plots/stats_politicization.html %}
 
 This plot (and all of our plots) is interactive; in particular, years on the
 right can be clicked and double-clicked to display only some of them. Mousing
@@ -83,7 +172,8 @@ well as the number of articles from that source in that particular year that our
 dataset contains.
 
 If we explore this plot, we see that the dataset doesn't really confirm our
-intuitions. Most sources appear to have mostly the same level of politicization.
+intuitions. We expected right-biased sources to be more politicized than others,
+but most sources appear to have about the same level of politicization.
 Both Fox News and Breitbart are commonly thought of as right-wing-biased.
 We may expect that they are publishing more articles quoting politicians (specifically,
 right-wing politicians) than other sources. However, this is not what we can see
@@ -106,7 +196,7 @@ well as coverage of important news events, while New York Post is a tabloid.
 
 The following plot displays plot displays how polarized our news sourced were:
 
-<!-- {% include_relative plots/stats_polarization_sgn.html %} -->
+{% include_relative plots/stats_polarization_sgn.html %}
 
 The polarization of a source is positive if it quoted more right-wing
 politicians than left-wing ones, negative in the reverse case.
@@ -119,15 +209,14 @@ left-biased and distrusted by the right. The Huffington Post is as
 left-polarized as ABC News, and The Wall Street Journal, with mixed readers and
 trusted by both the left and the right, is more left-polarized than either.
 
-However, we can uncover some strange occurences in different years. In 2016, the year
-that Donald Trump was elected, all news sources were left-polarized. On the other hand,
-in years 2018 and 2019 all news sources were right-polarized.
-
-TODO: how to explain this? Compare with Trumpization during those years?
+However, we have uncovered some strange occurences in different years. In 2016,
+the year that Donald Trump was elected, all news sources were left-polarized,
+which wasn't the case in 2015. On the other hand, in years 2017 and 2018 (but
+not 2017!) all news sources were right-polarized.
 
 For completeness, the following plot displays the absolute value of polarization:
 
-<!--{% include_relative plots/stats_polarization.html %}-->
+{% include_relative plots/stats_polarization.html %}
 
 ## Correlations
 
