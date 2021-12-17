@@ -6,18 +6,15 @@ title: Our beautiful data story
 {% include_relative home/scroller-uikit.html %}
 
 # Introduction
+***
+Democrats and Republicans: light and darkness for some, yin and yang for others.
 
-As is well known, the political system of the United States of America is marked
-by a system of bipolarity that opposes Democrats to Republicans. The bipolarity
-that opposes Americans at the ballot box and in the polls is reflected in
-several aspects of Americans' lifestyles, including the newspapers and news
-sources they rely on. This has led some news sources to lean toward a particular
-political area. It is well known, for example, that Democrats tend to follow TV
-news reported by CNN while Republicans by Fox News.
+The bipolarity that opposes Americans is not just a "ballot box thing", but rather an attitude ingrained in their day-to-day lives.
+Even the channel they pick when switching on the TV, first thing in the morning, is part of this bigger picture.
+Does landing on Fox News, CNN, or any other news source, have something to do with all of this?
 
-In the journey illustrated by this data story, we have the ambition to report
-factual data that supports the thesis that some news sources are biased,
-analyzing 5 years of quotes reported by 19 online newspapers that we selected.
+With the help of data, *A LOT OF DATA*, we hope to highlight that indeed it does and wish to provide quantitative figures to support this hypothesis.
+
 {% include_relative home/introduction/metrics.html %}
 
 ## Motivations
