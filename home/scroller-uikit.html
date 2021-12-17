@@ -1,59 +1,65 @@
 <div class="tm-sidebar-right" style="margin-top:100px">
-<ul class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon" uk-scrollspy-nav="closest: li; scroll: true" uk-sticky="offset: 200; bottom: #correlations">
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#motivations">Motivations</a></li>
-    <li><a href="#background">Background</a></li>
-    <li><a href="#neat-plots">Neat plots</a></li>
-    <li><a href="#politicization">Politicization</a></li>
-    <li><a href="#polarization">Polarization</a></li>
-    <li><a href="#correlations">Correlations</a></li>
-</ul>
+    <ul class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon" uk-scrollspy-nav="closest: li; scroll: true"
+        uk-sticky="offset: 200; bottom: #correlations" uk-scrollspy="target: > *; cls: uk-animation-fade; delay: 100">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#motivations">Motivations</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#neat-plots">Neat plots</a></li>
+        <li><a href="#politicization">Politicization</a></li>
+        <li><a href="#polarization">Polarization</a></li>
+        <li><a href="#correlations">Correlations</a></li>
+    </ul>
 </div>
 <style>
-.tm-sidebar-right {
-    position: absolute;
-    top: 0;
-    right: calc(100% + 0px);
-    width: 185px
-}
-li.uk-active {
-    font-size:25px;
-}
-li a {
-    transition: 0.2s
-}
-li.uk-active a {
-    position:relative;
-    color: red !important;
-    transition: 0.2s;
-    font-weight: 600;
-}
-li>a:before {
-content: "";
-position: absolute;
-top: 14px;
-left: -28px;
-width: 3px;
-border-left: none;
-height: 20px;
-transition: 1s;
-transition-property: right;
-}
-li.uk-active>a:before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: -28px;
-    width: 3px;
-    border-left: 3px solid red;
-    height: 20px;
-    transition: 1s ease-in-out;
-    transition-property: right
-}
+    .tm-sidebar-right {
+        position: absolute;
+        top: 0;
+        right: calc(100% + 0px);
+        width: 185px
+    }
+
+    li.uk-active {
+        font-size: 25px;
+    }
+
+    li a {
+        transition: 0.2s
+    }
+
+    li.uk-active a {
+        position: relative;
+        color: red !important;
+        transition: 0.2s;
+        font-weight: 600;
+    }
+
+    li>a:before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: -28px;
+        width: 3px;
+        border-left: none;
+        height: 20px;
+        transition: 1s;
+        transition-property: right;
+    }
+
+    li.uk-active>a:before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: -28px;
+        width: 3px;
+        border-left: 3px solid red;
+        height: 20px;
+        transition: 1s ease-in-out;
+        transition-property: right
+    }
 
 
 
-li {
-    font-size:18px
-}
+    li {
+        font-size: 18px
+    }
 </style>
