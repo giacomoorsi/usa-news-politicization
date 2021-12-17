@@ -61,11 +61,7 @@ _Briefly_ introduce our data sources (or should we do that at the end?):
 
 We do neat plots in this section.
 
-All our plots are interactive - points on the plot can be moused over to display
-precise information and sometimes, even additional information not shown
-otherwise (like the number of articles from a source in a particular year). You
-can also explore the plots and filter what is shown by clicking on the labels on
-the right-hand side of the plot.
+{% include_relative home/interactive_plots_intro.html %}
 
 We probably want to discuss methodology somewhere over here?
 I.e. what it is we exactly calculated.
