@@ -217,7 +217,7 @@ html {
     box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 10px 0px
 }
 
-.data-sources {
+.data-sources, .data-sources p, .data-sources h5 {
     text-align: center;
 }
 
@@ -239,4 +239,30 @@ b {
 
 .uk-card-default {
     background-color: #f2f2f2
+}
+
+.bob-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    height: 22px;
+    padding: 0 10px;
+    background: #1e87f0;
+    color: #fff;
+    font-size: .875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+a {
+    color : #E71D36;
+    text-decoration: underline
+}
+
+a:hover {
+    color: #000
 }
