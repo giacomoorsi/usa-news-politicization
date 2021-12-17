@@ -48,38 +48,8 @@ than people that oppose him, i.e. Democrats.
 
 So which sources are with Trump, and which ones are against him?
 
-### Fox News
-When people say that right-wingers consume biased news sources, they often think
-of Fox News. Primarily a news network, Fox News was, for instance,
-[accused](https://www.politico.com/story/2017/11/09/fox-news-trump-presidency-244712)
-of excessively covering scandals concerning Hillary Clinton in order to distract
-from alleged Russian interference in the 2016 presidential elections in the USA.
+{% include_relative home/news-sources.html %}
 
-### Breitbart News
-A news network founded by Andrew Breitbart. Wikipedia introduces it by saying
-that "its journalists are widely considered to be ideologically driven, and much
-of its content has been called misogynistic, xenophobic, and racist by liberals
-and traditional conservatives alike". This is the website often thought of as
-giving biased coverage to Donald Trump during his presidential campaign,
-as we can see [here](https://www.nytimes.com/2016/08/27/business/media/breitbart-news-presidential-race.html).
-
-### CNN
-A widely-watched news channel. Has been accused of false balance and being
-left-biased. May be known for reporting what some people would call a riot
-as "fiery but peaceful protests" after a police shooting.
-
-![Fiery but peaceful indeed.](https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/08/1862/1048/CNN-Headline-Fiery-2.jpg?ve=1&tl=1)
-
-### The Huffington Post
-Often mentioned as a left-biased news website. The mortal enemy of Breitbart
-News, which was created as "The Huffington Post of the right". Also known as
-HuffPost.
-
-### New York Post
-A conservative daily tabloid, known for headlines such as "Headless body in
-topless bar". Maybe surprisingly, maybe unsurprisingly, it was
-[reported](https://www.latimes.com/politics/la-na-pol-trump-insight-haberman-20170728-story.html)
-to be one of the news sources Donald Trump prefers to read.
 
 # Background
 
