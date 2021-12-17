@@ -50,10 +50,11 @@ than people that oppose him, i.e. Democrats.
 
 # Background
 
-_Briefly_ introduce our data sources (or should we do that at the end?):
-- Pew research
-- Similarweb
-- Twitter
+We conducted our experiment on 19 news sources, and these data sources provided the fuel:
+- Twitter: we manually scraped follower counts for each source.
+- Pew Research: we used the data collected in their Media Polarization study as ground truth.
+- Wikidata: we found out the jobs of quoted people.
+- Quotebank: we used it to access quotes from 5 years of online news articles.
 
 {% include_relative home/data-sources.html %}
 
