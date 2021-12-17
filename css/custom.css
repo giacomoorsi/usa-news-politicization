@@ -100,6 +100,37 @@ h1 {
     color: rgba(255, 255, 255, .7)
 }
 
+.uk-card-red.uk-card-hover .uk-card-badge-fox-news {
+    display: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+
+.uk-card-red.uk-card-hover:hover .uk-card-badge-fox-news {
+    display: block;
+    transform: rotate(-9deg);
+    z-index: 1000;
+    padding: 10px 10px;
+    line-height: 1.2;
+    top: 180px;
+    right: -50px;
+    font-family: 'Covered By Your Grace', cursive;
+    text-transform: none;   
+    font-size: 20px;
+    background: #FFC914;
+    color: rgb(37, 37, 37)
+
+}
+
+
+
+
+.uk-card-hover.uk-card-red:hover {
+    background-color: #d01c32 !important;
+    color: rgba(255, 255, 255, .7)
+}
+
 .uk-card-red .uk-card-title {
     color: #fff
 }
@@ -107,6 +138,26 @@ h1 {
 .uk-card-primary {
     background-color: #39A0ED
 }
+
+.uk-card-primary .uk-card-badge-cnn {
+    display: none;
+}
+
+.uk-card-primary.uk-card-hover:hover .uk-card-badge-cnn {
+    display: block;
+    transform: rotate(-9deg);
+    z-index: 1000;
+    padding: 10px 10px;
+    line-height: 1.2;
+    top: 180px;
+    right: -50px;
+    font-family: 'Covered By Your Grace', cursive;
+    text-transform: none;
+    font-size: 20px;
+    background: #FFC914;
+    color: rgb(37, 37, 37)
+}
+
 
 .uk-section-primary {
     background-color: #24272B;
@@ -151,9 +202,9 @@ html {
     font-size:20px
 }
 
-/*.plotly {
+.plotly {
     display: none !important
-}*/
+}
 
 .news-sources-logo-section .uk-text-small {
     font-size: 15px
@@ -163,4 +214,16 @@ html {
 }
 .news-sources-logo-section .uk-card-default {
     box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 10px 0px
+}
+
+.data-sources {
+    text-align: center;
+}
+
+.data-sources p {
+    font-size: 12px;
+    margin-top: 0px;
+}
+.data-sources h5 {
+    margin-bottom: 0px;
 }

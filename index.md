@@ -58,6 +58,8 @@ _Briefly_ introduce our data sources (or should we do that at the end?):
 - Similarweb
 - Twitter
 
+{% include_relative home/data-sources.html %}
+
 # Neat plots
 
 We do neat plots in this section.
