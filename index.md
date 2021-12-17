@@ -26,7 +26,7 @@ that news feature politicians more often (one well-known politician in
 particular) and that the articles often favour one side of the debate. During
 and after the 2016 election, there were many articles about how people backing
 Trump tended to read different news sources from people on the other side of the
-political spectrum, news sources that reportendly tended to publish news pieces
+political spectrum, news sources that reportedly tended to publish news pieces
 containing hoaxes and conspiracy theories - for instance, [this article](https://www.washingtonpost.com/news/the-fix/wp/2017/08/22/trump-backers-disturbing-reliance-on-hoax-and-conspiracy-theory-websites-in-1-chart/).
 We can still read that some news sources (like [the Gateway
 Pundit](https://www.reuters.com/investigates/special-report/usa-election-threats-gatewaypundit/))
@@ -66,7 +66,7 @@ We conducted our experiment on 19 news sources, and the following data sources p
 ## News sources
 
 Previously we introduced some of our news sources and we said that we have some
-intutions about the bias of those sources. It turns out that we're not the only
+intuitions about the bias of those sources. It turns out that we're not the only
 people with intuitions like that. Pew Research did a study of American public
 asking what opinions did people have about various news sources, and this
 research shows that our intuitions are actually reflected by what people think.
@@ -168,7 +168,7 @@ left-biased and distrusted by the right. The Huffington Post is as
 left-polarized as ABC News, and The Wall Street Journal, with mixed readers and
 trusted by both the left and the right, is more left-polarized than either.
 
-However, we have uncovered some strange occurences in different years. In 2016,
+However, we have uncovered some strange occurrences in different years. In 2016,
 the year that Donald Trump was elected, all news sources were left-polarized,
 which wasn't the case in 2015. On the other hand, in years 2017 and 2018 (but
 not 2017!) all news sources were right-polarized.
@@ -180,11 +180,11 @@ For completeness, the following plot displays the absolute value of polarization
 ## What a failure
 
 How is it possible that we could not prove the obvious even with so much data at our fingertips?
-Some of our fellow academians might have the answer to this quest.
-Straight from the Department of Physics and Institute for AI & Fundamental Interactions of... **drum roll**... the MIT, [Samantha and Max](https://arxiv.org/pdf/2109.00024.pdf) proposed a machine learning method to identify news sources based on the bias contained in a news piece.
-In their data pre-processing, they did something that surprised us: they removed quotations. 
-The two researchers clearly explained how the bias of news sources is, by far, identifiable by their word usage.
-But, when all hope was lost, the magic of data brought us a gift (possibly because we are close to the holidays).
+Some of our fellow academians might have the answer to this question.
+A [research](https://arxiv.org/pdf/2109.00024.pdf) by the Department of Physics and Institute for AI & Fundamental Interactions of the MIT,  proposed a machine learning method to identify news sources based on the bias contained in a news piece. 
+In their data pre-processing, they did something that surprised us: they removed quotations of politicians.
+The reason is that they wanted to extract the opinions of the journalists and, therefore, the media bias. Our approach was diametrically different, since we wanted to compute polarization based on how often a certain political party is quoted. 
+The two researchers clearly explained how the bias of news sources is, by far, identifiable by the words the journalists use in their articles.
 
 # There is something else...
 ***
@@ -192,65 +192,14 @@ But, when all hope was lost, the magic of data brought us a gift (possibly becau
 {% include_relative plots/twitter_correlation.html %}
 
 Although our principal analysis did not lead to the expected results, we accidentally stumbled into something interesting.
-As shown in the matrix above this paragraph, signed polarization negatively correlates with Twitter followers.
->To put it simply: Twitter users are left-wing-biased.
+As shown in the table above, there seems to be a slight negative correlation between signed polarization and Twitter followers.
+This may mean that Twitter users are left-wing-biased. 
 
-To confirm this data-driven gift, we went on the lookout for literature that would comment on our findings. We did not have to go too far from what we had already analyzed, Pew Research themselves conducted [a study in 2018](https://www.pewresearch.org/internet/2019/04/24/sizing-up-twitter-users/) which highlighted the fact that Twitter users are much more representative of the sphere supporting the Democratic Party. 
+This seems to be a debated topic and has been shown also in the literature. We did not have to go too far from what we had already analyzed, Pew Research themselves conducted [a study in 2018](https://www.pewresearch.org/internet/2019/04/24/sizing-up-twitter-users/) which highlighted the fact that Twitter users are much more representative of the sphere supporting the Democratic Party. 
 36% identify themselves as democrats, which is a 20% increase of the national, survey-based value of 30%.
 
 # Conclusion
-***
-
-<div class="uk-card uk-card-default uk-card-body">Having to walk away with our hypotheses shattered would have been a sour defeat, but finding the "why" to explain it was already a consolation prize.  Instead, our work did not stop there. We were able to provide a meaningful complementary statistic to reinforce the value provided by Pew Research's 2800 user survey.</div>
-
-
-<!--
-<div style="height:500px"></div>
----
-
-# Instructions
-In [this page](instructions) you can find some simple info on how to write that stuff. 
-
----
-
-# This is a test page
-
-This is an index page in markdown.
-
-Here you can simply write in **markdown**. 
-What happens if I import `HTML`?
-
-{% include_relative home/snippet.html %}
-
-Cool, it works. 
-
-Now we can go back to work!!!
-
-But also... we can import `Mardown` files!
-
-{% include_relative home/chapter-01.md %}
-
-## This is a test plotly demo
-
-With plotly, we can generate interactive plots and save them to HTML.
-Doing so is as simple as:
-
-```python
-import plotly.express as px
-df = px.data.medals_long()
-
-for i in range(0, len(df)):
-    # Add some column that pretends to be a name of the point
-    df.at[i, 'name'] = f'Point#{i}'
-
-fig = px.scatter(df, y="count", x="nation", color="medal", symbol="medal", hover_name='name')
-fig.update_traces(marker_size=10)
-fig.write_html("./scatter_demo.html", include_plotlyjs="cdn", full_html=False)
-```
-
-And if we include the result, it looks like follows:
-
-<!--{% include_relative plotly/scatter_demo.html %}-->
-
-
-<!--{% include_relative plotly/bar_demo.html %}-->
+<div class="uk-card uk-card-default uk-card-body uk-text-justify">In this data story, we reported the results we obtained in trying to calculate the politicization and bias of the American media from the politicians who are most frequently quoted. As explained, we could not extract information that agreed with the actual data found by scientific studies on media bias. That makes sense: for instance, quotes may be used to discredit the other political parties, eventually ruining our analysis. Therefore, what's important is that the context in which the quotations are reported. In fact, it would seem that opposite approaches, like the one carried out by MIT researchers, lead to the desired results. <br><br>  
+In conclusion, we believe we achieved a very interesting result. It seems very reasonable to think that just by looking at how often a news source cites a politicians or a political party it is possible to understand its polarization. We proved, with an analysis performed on millions of articles, that this belief is false. 
+<br>
+This data story was intentionally informal to simply explain complex topics. The formal analysis with well-documented steps is available <a href="https://github.com/epfl-ada/ada-2021-project-muesli/blob/master/scripts/pipeline.ipynb" target="_blank">here</a>.</div>
