@@ -188,7 +188,7 @@ For completeness, the following plot displays the absolute value of polarization
 
 How is it possible that we could not prove the obvious even with so much data at our fingertips?
 Some of our fellow academians might have the answer to this quest.
-Straight from the Department of Physics and Institute for AI & Fundamental Interactions of... *drum roll*... the MIT Samantha and Max proposed a machine learning method to identify news sources based on the bias contained in a news piece.
+Straight from the Department of Physics and Institute for AI & Fundamental Interactions of... **drum roll**... the MIT, [Samantha and Max](https://arxiv.org/pdf/2109.00024.pdf) proposed a machine learning method to identify news sources based on the bias contained in a news piece.
 In their data pre-processing, they did something that surprised us: they removed quotations. 
 The two researchers clearly explained how the bias of news sources is, by far, identifiable by their word usage.
 But, when all hope was lost, the magic of data brought us a gift (possibly because we are close to the holidays).
@@ -199,9 +199,10 @@ But, when all hope was lost, the magic of data brought us a gift (possibly becau
 
 Although our principal analysis did not lead to the expected results, we accidentally stumbled into something interesting.
 As shown in the matrix above this paragraph, signed polarization negatively correlates with Twitter followers.
-To put it simply: Twitter users are left-wing-biased.
-To confirm this data-driven gift, we went on the lookout for literature that would comment on our findings. We did not have to go too far from what we had already analyzed, Pew Research themselves conducted a study in 2018 which highlighted the fact that Twitter users are much more representative of the sphere supporting the Democratic Party. 
-36% identify themselves as democrats, which is a 20% increase of the survey-based value of 30%.
+>To put it simply: Twitter users are left-wing-biased.
+
+To confirm this data-driven gift, we went on the lookout for literature that would comment on our findings. We did not have to go too far from what we had already analyzed, Pew Research themselves conducted [a study in 2018](https://www.pewresearch.org/internet/2019/04/24/sizing-up-twitter-users/) which highlighted the fact that Twitter users are much more representative of the sphere supporting the Democratic Party. 
+36% identify themselves as democrats, which is a 20% increase of the national, survey-based value of 30%.
 
 ## Conclusion
 
