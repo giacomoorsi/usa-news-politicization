@@ -201,7 +201,7 @@ To confirm this data-driven gift, we went on the lookout for literature that wou
 # Conclusion
 ***
 
-Having to walk away with our hypotheses shattered would have been a sour defeat, but finding the "why" to explain it was already a consolation prize.  Instead, our work did not stop there. We were able to provide a meaningful complementary statistic to reinforce the value provided by Pew Research's 2800 user survey.
+<div class="uk-card uk-card-default uk-card-body">Having to walk away with our hypotheses shattered would have been a sour defeat, but finding the "why" to explain it was already a consolation prize.  Instead, our work did not stop there. We were able to provide a meaningful complementary statistic to reinforce the value provided by Pew Research's 2800 user survey.</div>
 
 
 <!--
