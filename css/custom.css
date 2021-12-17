@@ -236,3 +236,7 @@ html {
 b {
     font-weight: 600
 }
+
+.uk-card-default {
+    background-color: #f2f2f2
+}
