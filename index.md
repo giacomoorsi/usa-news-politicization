@@ -18,8 +18,8 @@ With the help of data, *A LOT OF DATA*, we hope to highlight that indeed it does
 {% include_relative home/introduction/metrics.html %}
 
 ## Motivations
-
-Why did we decide to do this project?
+***
+>> "Oh yeah I don't read those newspapers because they are biased. My favorite news sources aren't!" - Everyone, 2021
 
 Over the recent years, we've been hearing a lot that there's an increasing
 amount of politicization and polarization of news sources in the USA, meaning
@@ -43,7 +43,7 @@ Intuitively, we would expect news sources aligned with Trump to publish articles
 that cite him and people from his political circle - Republicans, that is - more
 than people that oppose him, i.e. Democrats.
 
-So which sources are with Trump, and which ones are against him?
+*Let's have a round of applause for some of the members of the observed team!*
 
 {% include_relative home/news-sources.html %}
 
