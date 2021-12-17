@@ -202,9 +202,10 @@ html {
     font-size:20px
 }
 
+/*
 .plotly {
     display: none !important
-}
+}*/
 
 .news-sources-logo-section .uk-text-small {
     font-size: 15px
@@ -226,4 +227,8 @@ html {
 }
 .data-sources h5 {
     margin-bottom: 0px;
+}
+
+#footer .uk-text-meta {
+    font-weight: 500;
 }
