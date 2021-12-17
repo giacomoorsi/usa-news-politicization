@@ -257,3 +257,12 @@ b {
     line-height: 0;
     border-radius: 2px;
 }
+
+a {
+    color : #E71D36;
+    text-decoration: underline
+}
+
+a:hover {
+    color: #000
+}

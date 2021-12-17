@@ -28,8 +28,7 @@ particular) and that the articles often favour one side of the debate. During
 and after the 2016 election, there were many articles about how people backing
 Trump tended to read different news sources from people on the other side of the
 political spectrum, news sources that reportendly tended to publish news pieces
-containing hoaxes and conspiracy theories - for instance, [this article
-](https://www.washingtonpost.com/news/the-fix/wp/2017/08/22/trump-backers-disturbing-reliance-on-hoax-and-conspiracy-theory-websites-in-1-chart/).
+containing hoaxes and conspiracy theories - for instance, [this article](https://www.washingtonpost.com/news/the-fix/wp/2017/08/22/trump-backers-disturbing-reliance-on-hoax-and-conspiracy-theory-websites-in-1-chart/).
 We can still read that some news sources (like [the Gateway
 Pundit](https://www.reuters.com/investigates/special-report/usa-election-threats-gatewaypundit/))
 are gaining a huge number of readers by helping Trump spread his claims about
@@ -50,11 +49,12 @@ than people that oppose him, i.e. Democrats.
 
 # Background
 
-We conducted our experiment on 19 news sources, and these data sources provided the fuel:
+We conducted our experiment on 19 news sources, and the following data sources provided the fuel:
 - Twitter: we manually scraped follower counts for each source.
-- Pew Research: we used the data collected in their Media Polarization study as ground truth.
+- Pew Research: we used the data collected in their <a href="https://www.pewresearch.org/journalism/2020/01/24/u-s-media-polarization-and-the-2020-election-a-nation-divided/" target="_blank">Media Polarization</a> study as ground truth. 
 - Wikidata: we found out the jobs of quoted people.
 - Quotebank: we used it to access quotes from 5 years of online news articles.
+- Similarweb: we used that platform to extract the number of visitors of the websites of the news sources
 
 {% include_relative home/data-sources.html %}
 
