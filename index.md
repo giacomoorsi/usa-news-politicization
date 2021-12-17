@@ -18,7 +18,6 @@ With the help of data, *A LOT OF DATA*, we hope to highlight that indeed it does
 {% include_relative home/introduction/metrics.html %}
 
 ## Motivations
-***
 >> "Oh yeah I don't read those newspapers because they are biased. My favorite news sources aren't!" - Everyone, 2021
 
 Over the recent years, we've been hearing a lot that there's an increasing
@@ -47,7 +46,8 @@ than people that oppose him, i.e. Democrats.
 {% include_relative home/news-sources.html %}
 
 
-# Background
+# Our data
+***
 
 We conducted our experiment on 19 news sources, and the following data sources provided the fuel:
 - Twitter: we manually scraped follower counts for each source.
@@ -58,17 +58,10 @@ We conducted our experiment on 19 news sources, and the following data sources p
 
 {% include_relative home/data-sources.html %}
 
-# Neat plots
-
-We do neat plots in this section.
+# Analysis
+***
 
 {% include_relative home/interactive_plots_intro.html %}
-
-We probably want to discuss methodology somewhere over here?
-I.e. what it is we exactly calculated.
-
-Our analysis is based on counting articles in which a quote from a given speaker
-occurs.
 
 ## News sources
 
@@ -193,7 +186,8 @@ In their data pre-processing, they did something that surprised us: they removed
 The two researchers clearly explained how the bias of news sources is, by far, identifiable by their word usage.
 But, when all hope was lost, the magic of data brought us a gift (possibly because we are close to the holidays).
 
-## There is something else...
+# There is something else...
+***
 
 {% include_relative plots/twitter_correlation.html %}
 
@@ -204,7 +198,8 @@ As shown in the matrix above this paragraph, signed polarization negatively corr
 To confirm this data-driven gift, we went on the lookout for literature that would comment on our findings. We did not have to go too far from what we had already analyzed, Pew Research themselves conducted [a study in 2018](https://www.pewresearch.org/internet/2019/04/24/sizing-up-twitter-users/) which highlighted the fact that Twitter users are much more representative of the sphere supporting the Democratic Party. 
 36% identify themselves as democrats, which is a 20% increase of the national, survey-based value of 30%.
 
-## Conclusion
+# Conclusion
+***
 
 Having to walk away with our hypotheses shattered would have been a sour defeat, but finding the "why" to explain it was already a consolation prize.  Instead, our work did not stop there. We were able to provide a meaningful complementary statistic to reinforce the value provided by Pew Research's 2800 user survey.
 
