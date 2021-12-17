@@ -189,6 +189,8 @@ For completeness, the following plot displays the absolute value of polarization
 
 ## Correlations
 
+{% include_relative plots/twitter_correlation.html %}
+
 Show the correlation matrices.
 
 Discuss how we found out that probably the Internet is left-wing-biased.
