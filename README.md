@@ -1,4 +1,4 @@
-# Undestanding news politicization
+# Understanding news politicization
 
 This repository contains the source code of the [website](https://giacomoorsi.github.io/usa-news-politicization/) which contains the data story on the polarization and politicization of US online media. 
 
